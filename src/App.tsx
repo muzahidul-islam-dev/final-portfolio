@@ -34,6 +34,7 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const heroDescription = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
+const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam officiis temporibus accusamus! In obcaecati, assumenda alias quia facilis eligendi iure tempore cumque numquam quos, temporibus fuga odit ab at.`;
   return (
     <div>
       <div className="relative w-full">
@@ -53,7 +54,7 @@ export default function App() {
               <NavItems items={navItems} />
               <div className="flex gap-4">
                 <NavbarButton variant="secondary">Login</NavbarButton>
-                <NavbarButton variant="gradient">Book a call</NavbarButton>
+                <NavbarButton variant="bgPrimary">Book a call</NavbarButton>
               </div>
             </NavBody>
 
@@ -92,7 +93,7 @@ export default function App() {
                   <NavbarButton
                     onClick={() => setIsMobileMenuOpen(false)}
                     variant="gradient"
-                    className="w-full"
+                    className="w-full bg-primary"
                   >
                     Book a call
                   </NavbarButton>
@@ -118,7 +119,7 @@ export default function App() {
               />
               <div className="flex gap-5">
                 <button
-                  className="bg-primary py-5 px-10 rounded-[1.75rem]"
+                  className="bg-primary px-10 rounded-[1.75rem]"
                 >
                   Contact Us
                 </button>
@@ -150,6 +151,14 @@ export default function App() {
           {/* Radial gradient for the container to give a faded look */}
           {/* <div className="pointer-events-none absolute inset-0 flex justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div> */}
         </BackgroundBeamsWithCollision>
+      </div>
+      <div className="max-w-[1600px] mx-auto py-32">
+            <h3 className="text-primary text-xl">About Me</h3>
+            <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
+            <TextGenerateEffect
+                className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
+                words={aboutContent}
+              />
       </div>
     </div>
   );
