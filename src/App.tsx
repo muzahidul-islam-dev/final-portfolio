@@ -102,7 +102,7 @@ const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </MobileNav>
           </Navbar>
 
-          <div className="grid mt-64 grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1600px] mx-auto">
+          <div className="grid mt-64 grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
             <div>
               <h3 className="text-xl font-bold md:text-4xl lg:text-4xl text-white my-5">
                 Hello,
@@ -142,7 +142,7 @@ const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
           </div>
 
-          <div className="flex max-w-[1600px] gap-5 mx-auto ">
+          <div className="flex max-w-[1400px] gap-5 mx-auto ">
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
@@ -152,7 +152,7 @@ const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           {/* <div className="pointer-events-none absolute inset-0 flex justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div> */}
         </BackgroundBeamsWithCollision>
       </div>
-      <div className="max-w-[1600px] mx-auto py-32">
+      <div className="max-w-[1400px] mx-auto py-32">
             <h3 className="text-primary text-xl">About Me</h3>
             <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
             <TextGenerateEffect
