@@ -34,7 +34,7 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const heroDescription = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
-const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam officiis temporibus accusamus! In obcaecati, assumenda alias quia facilis eligendi iure tempore cumque numquam quos, temporibus fuga odit ab at.`;
+  const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam officiis temporibus accusamus! In obcaecati, assumenda alias quia facilis eligendi iure tempore cumque numquam quos, temporibus fuga odit ab at.`;
   return (
     <div>
       <div className="relative w-full">
@@ -153,12 +153,17 @@ const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         </BackgroundBeamsWithCollision>
       </div>
       <div className="max-w-[1400px] mx-auto py-32">
+        <div className="grid grid-cols-2">
+          <div className=""></div>
+          <div className="grid">
             <h3 className="text-primary text-xl">About Me</h3>
             <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
             <TextGenerateEffect
-                className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
-                words={aboutContent}
-              />
+              className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
+              words={aboutContent}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
