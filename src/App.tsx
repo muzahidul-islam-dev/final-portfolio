@@ -21,6 +21,7 @@ import { OrbitingCircles } from "./components/ui/OrbitingCircles";
 import Icons from "./components/Icons";
 import { HeroParallax } from "./components/ui/hero-parallax";
 import Projects from "./components/Projects";
+import { FlipWords } from "./components/ui/flip-words";
 export default function App() {
   const navItems = [
     {
@@ -40,6 +41,11 @@ export default function App() {
   const heroDescription = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
   const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam officiis temporibus accusamus! In obcaecati, assumenda alias quia facilis eligendi iure tempore cumque numquam quos, temporibus fuga odit ab at.`;
+  const professionWords = [
+    'Web Designer',
+    'Web Developer',
+    'Full Stack Developer'
+  ]
   return (
     <div>
       <div className="relative w-full">
@@ -51,10 +57,10 @@ export default function App() {
             "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        <BackgroundBeamsWithCollision className="grid  h-[1000px] bg-transparent border-none !w-full" >
-          <Navbar className="py-10">
+        <BackgroundBeamsWithCollision className="grid h-[1000px] bg-transparent border-none !w-full" >
+          <Navbar>
             {/* Desktop Navigation */}
-            <NavBody className="fixed m-auto left-0 right-0">
+            <NavBody className="fixed m-auto left-0 right-0 ">
               <NavbarLogo />
               <NavItems items={navItems} />
               <div className="flex gap-4">
@@ -116,7 +122,7 @@ export default function App() {
                 I'm <ColourfulText text="RAHAT HOSSAIN" /> a
               </h2>
               <h3 className="text-2xl md:text-5xl lg:text-5xl font-bold text-primary  relative z-2 font-sans my-7">
-                Web Designer
+                <FlipWords words={professionWords} />
               </h3>
               <TextGenerateEffect
                 className="font-light text-sm w-2xl text-gray-900 mb-10"
