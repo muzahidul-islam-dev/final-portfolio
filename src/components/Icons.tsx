@@ -12,6 +12,9 @@ import tailwindCSSIcon from './../assets/img/tailwindcss-icon.svg'
 import flutterIcon from './../assets/img/flutterio-icon.svg'
 import nextJs from './../assets/img/nextjs-icon.svg'
 import gitIcon from './../assets/img/git-scm-icon.svg'
+import dartIcon from './../assets/img/dartlang-icon.svg'
+import wordpressIcon from './../assets/img/wordpress-icon.svg'
+import postmanIcon from './../assets/img/getpostman-icon.svg'
 
 const Icons = {
   gitHub: () => (
@@ -124,6 +127,15 @@ const Icons = {
   ),
   gitIcon: () => (
     <img src={gitIcon} alt="" />
+  ),
+  dartIcon: () => (
+    <img src={dartIcon} alt="" />
+  ),
+  wordpressIcon: () => (
+    <img src={wordpressIcon} alt="" />
+  ),
+  postmanIcon: () => (
+    <img src={postmanIcon} alt="" />
   ),
 }
 

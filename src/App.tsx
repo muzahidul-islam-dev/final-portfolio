@@ -19,6 +19,8 @@ import ProfileImage from "./assets/img/profile.jpg";
 import { Button } from "./components/ui/moving-border";
 import { OrbitingCircles } from "./components/ui/OrbitingCircles";
 import Icons from "./components/Icons";
+import { HeroParallax } from "./components/ui/hero-parallax";
+import Projects from "./components/Projects";
 export default function App() {
   const navItems = [
     {
@@ -50,7 +52,7 @@ export default function App() {
           )}
         />
         <BackgroundBeamsWithCollision className="grid  h-[1000px] bg-transparent border-none !w-full" >
-          <Navbar>
+          <Navbar className="py-10">
             {/* Desktop Navigation */}
             <NavBody className="fixed m-auto left-0 right-0">
               <NavbarLogo />
@@ -105,7 +107,7 @@ export default function App() {
             </MobileNav>
           </Navbar>
 
-          <div className="grid mt-64 grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
+          <div className="grid mt-20 grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
             <div>
               <h3 className="text-xl font-bold md:text-4xl lg:text-4xl text-white my-5">
                 Hello,
@@ -177,9 +179,9 @@ export default function App() {
               </OrbitingCircles>
               <OrbitingCircles iconSize={30} radius={70} speed={2}>
                 <Icons.gitIcon />
-                <Icons.javascriptIcon />
-                <Icons.mongoDB />
-                <Icons.mysql />
+                <Icons.postmanIcon />
+                <Icons.wordpressIcon />
+                <Icons.dartIcon />
                 <Icons.flutterIcon />
               </OrbitingCircles>
             </div>
@@ -196,7 +198,9 @@ export default function App() {
           </div>
         </div>
       </div>
-      <section></section>
+      <section>
+        <HeroParallax products={Projects} />;
+      </section>
     </div>
   );
 }
