@@ -1,5 +1,6 @@
 import { cn } from "./lib/utils";
 import React, { useState } from "react";
+
 import {
   Navbar,
   NavBody,
@@ -16,6 +17,8 @@ import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 import ProfileImage from "./assets/img/profile.jpg";
 import { Button } from "./components/ui/moving-border";
+import { OrbitingCircles } from "./components/ui/OrbitingCircles";
+import Icons from "./components/Icons";
 export default function App() {
   const navItems = [
     {
@@ -152,19 +155,50 @@ export default function App() {
           {/* <div className="pointer-events-none absolute inset-0 flex justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div> */}
         </BackgroundBeamsWithCollision>
       </div>
-      <div className="max-w-[1400px] mx-auto py-32">
+      <div className="max-w-[1400px] mx-auto my-20">
         <div className="grid grid-cols-2">
-          <div className=""></div>
-          <div className="grid">
-            <h3 className="text-primary text-xl">About Me</h3>
-            <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
-            <TextGenerateEffect
-              className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
-              words={aboutContent}
-            />
+          <div className="">
+            <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden">
+              <OrbitingCircles iconSize={40} radius={250}>
+                <Icons.typescript />
+                <Icons.phpIcon />
+                <Icons.expressIcon />
+                <Icons.reactJsIcon />
+                <Icons.nodeJs />
+                <Icons.tailwindCSSIcon />
+                <Icons.nextJs />
+              </OrbitingCircles>
+              <OrbitingCircles iconSize={35} radius={150} reverse speed={2}>
+                <Icons.laravelIcon />
+                <Icons.javascriptIcon />
+                <Icons.mongoDB />
+                <Icons.mysql />
+                <Icons.flutterIcon />
+              </OrbitingCircles>
+              <OrbitingCircles iconSize={30} radius={70} speed={2}>
+                <Icons.gitIcon />
+                <Icons.javascriptIcon />
+                <Icons.mongoDB />
+                <Icons.mysql />
+                <Icons.flutterIcon />
+              </OrbitingCircles>
+            </div>
+          </div>
+          <div className="grid items-center">
+            <div>
+              <h3 className="text-primary text-xl">About Me</h3>
+              <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
+              <TextGenerateEffect
+                className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
+                words={aboutContent}
+              />
+            </div>
           </div>
         </div>
       </div>
+      <section></section>
     </div>
   );
 }
+
+
