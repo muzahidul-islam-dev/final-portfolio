@@ -207,6 +207,9 @@ export default function App() {
       <section>
         <HeroParallax products={Projects} />;
       </section>
+      <section>
+        
+      </section>
     </div>
   );
 }
