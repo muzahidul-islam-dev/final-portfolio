@@ -24,6 +24,7 @@ import Projects from "./components/Projects";
 import { FlipWords } from "./components/ui/flip-words";
 import { CardSpotlight } from "./components/ui/card-spotlight";
 import { AuroraBackground } from "./components/ui/aurora-background";
+import { SparklesCore } from "./components/ui/sparkles";
 export default function App() {
   const navItems = [
     {
@@ -165,52 +166,54 @@ export default function App() {
           {/* <div className="pointer-events-none absolute inset-0 flex justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div> */}
         </BackgroundBeamsWithCollision>
       </div>
-      <div className="max-w-[1400px] mx-auto my-20">
-        <div className="grid grid-cols-2">
-          <div className="">
-            <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden">
-              <OrbitingCircles iconSize={40} radius={250}>
-                <Icons.typescript />
-                <Icons.phpIcon />
-                <Icons.expressIcon />
-                <Icons.reactJsIcon />
-                <Icons.nodeJs />
-                <Icons.tailwindCSSIcon />
-                <Icons.nextJs />
-              </OrbitingCircles>
-              <OrbitingCircles iconSize={35} radius={150} reverse speed={2}>
-                <Icons.laravelIcon />
-                <Icons.javascriptIcon />
-                <Icons.mongoDB />
-                <Icons.mysql />
-                <Icons.flutterIcon />
-              </OrbitingCircles>
-              <OrbitingCircles iconSize={30} radius={70} speed={2}>
-                <Icons.gitIcon />
-                <Icons.postmanIcon />
-                <Icons.wordpressIcon />
-                <Icons.dartIcon />
-                <Icons.flutterIcon />
-              </OrbitingCircles>
+      <section className="my-20">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-2">
+            <div className="">
+              <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden">
+                <OrbitingCircles iconSize={40} radius={250}>
+                  <Icons.typescript />
+                  <Icons.phpIcon />
+                  <Icons.expressIcon />
+                  <Icons.reactJsIcon />
+                  <Icons.nodeJs />
+                  <Icons.tailwindCSSIcon />
+                  <Icons.nextJs />
+                </OrbitingCircles>
+                <OrbitingCircles iconSize={35} radius={150} reverse speed={2}>
+                  <Icons.laravelIcon />
+                  <Icons.javascriptIcon />
+                  <Icons.mongoDB />
+                  <Icons.mysql />
+                  <Icons.flutterIcon />
+                </OrbitingCircles>
+                <OrbitingCircles iconSize={30} radius={70} speed={2}>
+                  <Icons.gitIcon />
+                  <Icons.postmanIcon />
+                  <Icons.wordpressIcon />
+                  <Icons.dartIcon />
+                  <Icons.flutterIcon />
+                </OrbitingCircles>
+              </div>
             </div>
-          </div>
-          <div className="grid items-center">
-            <div>
-              <h3 className="text-primary text-xl">About Me</h3>
-              <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
-              <TextGenerateEffect
-                className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
-                words={aboutContent}
-              />
+            <div className="grid items-center">
+              <div>
+                <h3 className="text-primary text-xl">About Me</h3>
+                <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
+                <TextGenerateEffect
+                  className="font-light text-sm max-w-7xl text-gray-500 mt-10 mb-10"
+                  words={aboutContent}
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section>
+      </section>
+      <section className="rounded-2xl py-20 my-20 border-b-4 border-primary">
         <HeroParallax products={Projects} />;
       </section>
 
-      <section className="px-20 rounded-2xl py-20 my-20 border-t-4 border-primary">
+      <section className="px-20 my-40">
         <div className="max-w-[1400px] mx-auto">
           <h3 className="text-gray-400 text-sm md:text-xl text-center uppercase">Popular Services</h3>
           <h1 className="text-white text-3xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
@@ -259,8 +262,34 @@ export default function App() {
 
       </section>
 
-      <section>
-        
+      <section className="border-t-4 border-primary rounded-2xl my-20">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="h-[30rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20 uppercase">
+              Skills
+            </h1>
+            <div className="w-[40rem] h-40 relative">
+              {/* Gradients */}
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+              {/* Core component */}
+              <SparklesCore
+                background="transparent"
+                minSize={0.4}
+                maxSize={1}
+                particleDensity={1200}
+                className="w-full h-full"
+                particleColor="#FFFFFF"
+              />
+
+              {/* Radial Gradient to prevent sharp edges */}
+              <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
