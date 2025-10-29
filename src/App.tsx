@@ -1,6 +1,5 @@
 import { cn } from "./lib/utils";
 import { useState } from "react";
-import { motion } from "motion/react";
 import {
   Navbar,
   NavBody,
