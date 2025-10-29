@@ -109,7 +109,7 @@ export default function App() {
             </MobileNav>
           </Navbar>
 
-          <div className="grid mt-20 grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
+          <div className="grid mt-20 lg:grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
             <div>
               <h3 className="text-xl font-bold md:text-4xl lg:text-4xl text-white my-5">
                 Hello,
@@ -138,12 +138,10 @@ export default function App() {
                 </Button>
               </div>
             </div>
-            <div className="grid justify-end">
+            <div className="grid lg:justify-end">
               <img
                 src={ProfileImage}
-                height={400}
-                width={400}
-                className="rounded"
+                className="rounded h md:h-60 lg:h-96"
                 alt=""
               />
             </div>
@@ -163,7 +161,7 @@ export default function App() {
         <div className="max-w-[1400px] mx-auto px-10">
           <div className="grid md:grid-cols-2">
             <div className="">
-              <div className="relative flex h-[300px] md:h-[600px] w-full flex-col items-center justify-center overflow-hidden">
+              <div className="relative flex h-[500px] md:h-[600px] w-full flex-col items-center justify-center overflow-hidden">
                 <OrbitingCircles iconSize={40} radius={250}>
                   <Icons.typescript />
                   <Icons.phpIcon />
@@ -189,7 +187,7 @@ export default function App() {
                 </OrbitingCircles>
               </div>
             </div>
-            <div className="grid items-center">
+            <div className="grid items-center my-20 md:my-0">
               <div>
                 <h3 className="text-primary text-xl">About Me</h3>
                 <h3 className="text-white text-4xl font-bold">Professional Problem Solutions For Digital Products</h3>
