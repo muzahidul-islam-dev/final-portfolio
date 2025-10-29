@@ -23,7 +23,7 @@ import nodeJSIcon from './../assets/img/icons/nodejs.png'
 import TailWindCSS from './../assets/img/icons/icons8-tailwind-css-240.png'
 import MySqlIcon from './../assets/img/icons/mysql.png'
 import LaravelIcon from './../assets/img/icons/laravel.png'
-import BootstrapIcon from './../assets/img/icons/Bootstrap.png'
+import BootstrapIcon from './../assets/img/icons/bootstrap.png'
 
 const Icons = {
   gitHub: ({...rest}) => (
