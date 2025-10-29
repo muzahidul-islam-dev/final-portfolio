@@ -23,7 +23,7 @@ import { HeroParallax } from "./components/ui/hero-parallax";
 import Projects from "./components/Projects";
 import { FlipWords } from "./components/ui/flip-words";
 import { CardSpotlight } from "./components/ui/card-spotlight";
-import { AuroraBackground } from "./components/ui/aurora-background";
+
 import { SparklesCore } from "./components/ui/sparkles";
 export default function App() {
   const navItems = [
@@ -60,15 +60,14 @@ export default function App() {
             "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        <BackgroundBeamsWithCollision className="grid h-[1000px] bg-transparent border-none !w-full" >
+        <BackgroundBeamsWithCollision className="grid h-[940px] bg-transparent border-none !w-full" >
           <Navbar>
             {/* Desktop Navigation */}
             <NavBody className="fixed m-auto left-0 right-0 ">
               <NavbarLogo />
               <NavItems items={navItems} />
               <div className="flex gap-4">
-                <NavbarButton variant="secondary">Login</NavbarButton>
-                <NavbarButton variant="bgPrimary">Book a call</NavbarButton>
+                <NavbarButton variant="bgPrimary" className="rounded-2xl">Contact Me</NavbarButton>
               </div>
             </NavBody>
 
@@ -100,16 +99,9 @@ export default function App() {
                   <NavbarButton
                     onClick={() => setIsMobileMenuOpen(false)}
                     variant="gradient"
-                    className="w-full"
+                    className="w-full bg-primary rounded-xl"
                   >
-                    Login
-                  </NavbarButton>
-                  <NavbarButton
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    variant="gradient"
-                    className="w-full bg-primary"
-                  >
-                    Book a call
+                    Contact Me
                   </NavbarButton>
                 </div>
               </MobileNavMenu>
@@ -185,7 +177,7 @@ export default function App() {
                   <Icons.javascriptIcon />
                   <Icons.mongoDB />
                   <Icons.mysql />
-                  <Icons.flutterIcon />
+                  <Icons.bootstrapIcon />
                 </OrbitingCircles>
                 <OrbitingCircles iconSize={30} radius={70} speed={2}>
                   <Icons.gitIcon />
@@ -264,9 +256,9 @@ export default function App() {
 
       <section className="border-t-4 border-primary rounded-2xl my-20">
         <div className="max-w-[1400px] mx-auto">
-          <div className="h-[30rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20 uppercase">
-              Skills
+          <div className="h-[25rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md mt-10">
+            <h1 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 uppercase">
+              Skills and Experience
             </h1>
             <div className="w-[40rem] h-40 relative">
               {/* Gradients */}
@@ -287,9 +279,152 @@ export default function App() {
 
               {/* Radial Gradient to prevent sharp edges */}
               <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+
+
+            </div>
+          </div>
+          <div className="grid grid-cols-5 gap-7">
+            <div className="rounded-xl bg-gray-900 py-5 hover:shadow-lg shadow-teal-500/50 duration-300 transition-all">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.phpSkillIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">PHP</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center h-14 w-14 m-auto bg-white py-2 px-2 rounded-full">
+                <Icons.laravelSkillIcon />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Laravel</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.mysqlIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">MySql</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.mongoDBIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">MongoDB</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.reactJsIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">React</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.expressIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Express Js</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.typeScriptIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Typescript</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.nextJsIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Next JS</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.tailwindCSS className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Tailwind CSS</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.javascriptIcon className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">JavaScript</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.dartIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Dart</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.wordpressIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">WordPress</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.flutterIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Flutter</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.postmanIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">Postman</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
+            </div>
+            <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
+              <div className="flex justify-center my-5 items-center">
+                <Icons.gitIcon className="h-14" />
+              </div>
+              <div>
+                <h3 className="text-white text-center text-xl font-semibold">GitHub</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+
       </section>
     </div>
   );
