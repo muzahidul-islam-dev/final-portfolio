@@ -61,7 +61,7 @@ export default function App() {
             "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
           )}
         />
-        <BackgroundBeamsWithCollision className="grid h-[940px] bg-transparent border-none !w-full" >
+        <BackgroundBeamsWithCollision className="grid h-fit lg:h-[940px] bg-transparent border-none !w-full" >
           <Navbar>
             {/* Desktop Navigation */}
             <NavBody className="fixed m-auto left-0 right-0 ">
@@ -111,20 +111,20 @@ export default function App() {
 
           <div className="grid mt-20 lg:grid-cols-2 gap-10 px-5 w-full justify-between max-w-[1400px] mx-auto">
             <div>
-              <h3 className="text-xl font-bold md:text-4xl lg:text-4xl text-white my-5">
+              <h3 className="text-xl text-center lg:text-left font-bold md:text-4xl lg:text-4xl text-white my-5">
                 Hello,
               </h3>
-              <h2 className="text-2xl md:text-5xl lg:text-5xl font-bold text-white relative z-2 font-sans">
+              <h2 className="text-2xl md:text-5xl text-center lg:text-left lg:text-5xl font-bold text-white relative z-2 font-sans">
                 I'm <ColourfulText text="RAHAT HOSSAIN" /> a
               </h2>
-              <h3 className="text-2xl md:text-5xl lg:text-5xl font-bold text-primary  relative z-2 font-sans my-7">
+              <h3 className="text-2xl text-center lg:text-left md:text-5xl lg:text-5xl font-bold text-primary  relative z-2 font-sans my-7">
                 <FlipWords words={professionWords} />
               </h3>
               <TextGenerateEffect
-                className="font-light text-sm w-2xl text-gray-900 mb-10"
+                className="font-light text-center lg:text-left text-sm lg:w-2xl text-gray-900 mb-10"
                 words={heroDescription}
               />
-              <div className="flex gap-5">
+              <div className="flex gap-5 justify-center lg:justify-start">
                 <button
                   className="bg-primary px-10 rounded-[1.75rem]"
                 >
@@ -138,16 +138,16 @@ export default function App() {
                 </Button>
               </div>
             </div>
-            <div className="grid lg:justify-end">
+            <div className="grid justify-center lg:justify-end mb-10">
               <img
                 src={ProfileImage}
-                className="rounded h-72 md:h-60 lg:h-96"
+                className="rounded h-72 md:h-80 lg:h-96"
                 alt=""
               />
             </div>
           </div>
 
-          <div className="flex max-w-[1400px] gap-5 mx-auto ">
+          <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1400px] gap-5 mx-auto px-5 md:px-10">
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
             <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
@@ -158,7 +158,7 @@ export default function App() {
         </BackgroundBeamsWithCollision>
       </div>
       <section className="my-20">
-        <div className="max-w-[1400px] mx-auto px-10">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
           <div className="grid md:grid-cols-2">
             <div className="">
               <div className="relative flex h-[500px] md:h-[600px] w-full flex-col items-center justify-center overflow-hidden">
@@ -204,13 +204,13 @@ export default function App() {
         <HeroParallax products={Projects} />;
       </section>
 
-      <section className="px-20 my-20">
-        <div className="max-w-[1400px] mx-auto">
+      <section className="my-20">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
           <h3 className="text-gray-400 text-sm md:text-xl text-center uppercase">Popular Services</h3>
-          <h1 className="text-white text-3xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
+          <h1 className="text-white text-2xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
             Business Development</h1>
-          <div className="max-w-5xl mx-auto my-20">
-            <div className="grid grid-cols-2 gap-7">
+          <div className="lg:max-w-5xl mx-auto my-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
                   <span className="text-primary font-bold text-2xl">01</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
@@ -282,7 +282,7 @@ export default function App() {
 
             </div>
           </div>
-          <div className="grid grid-cols-5 gap-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-7">
             <div className="rounded-xl bg-gray-900 py-5 hover:shadow-lg shadow-teal-500/50 duration-300 transition-all">
               <div className="flex justify-center my-5 items-center">
                 <Icons.phpSkillIcon className="h-14" />
@@ -424,10 +424,10 @@ export default function App() {
 
       <section className="my-40">
         <div className="max-w-[1400px] mx-auto px-10 ">
-          <div className="grid grid-cols-2 gap-10 items-center justify-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center justify-center">
             <div className="max-w-md">
               <h3 className="text-white">Get In Touch</h3>
-              <h1 className="text-white text-5xl font-bold my-5">Let’s Talk For your <br /><span className="text-primary">Next Projects</span></h1>
+              <h1 className="text-white text-2xl lg:text-5xl font-bold my-5">Let’s Talk For your <br /><span className="text-primary">Next Projects</span></h1>
               <p className="text-white">I’m always open to discussing product design work or partnership opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
 
             </div>
@@ -436,26 +436,21 @@ export default function App() {
                 <ShineBorder shineColor={["#1DCD9F", "#FE8FB5", "#1DCD9F"]} />
                 <CardContent>
                   <form>
-                    <div className="grid grid-cols-2 gap-10">
-                      <div className="grid gap-2">
-                        {/* <Label className="text-white" htmlFor="email">Name</Label> */}
-                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+                      <div className="w-full">
+                        <input className="text-white w-full border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
                       </div>
-                      <div className="grid gap-2">
-                        {/* <Label className="text-white" htmlFor="email">Email</Label> */}
-                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="email" placeholder="Enter Email" />
+                      <div className="w-full">
+                        <input className="text-white w-full border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="email" placeholder="Enter Email" />
                       </div>
-                      <div className="grid gap-2">
-                        {/* <Label className="text-white" htmlFor="email">Number</Label> */}
-                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500  focus:appearance-none" id="email" type="number" placeholder="Enter Number" />
+                      <div className="w-full">
+                        <input className="text-white w-full border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500  focus:appearance-none" id="email" type="number" placeholder="Enter Number" />
                       </div>
-                      <div className="grid gap-2">
-                        {/* <Label className="text-white" htmlFor="email">Subject</Label> */}
-                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
+                      <div className="w-full">
+                        <input className="text-white w-full border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
                       </div>
-                      <div className="grid gap-2 col-span-2">
-                        {/* <Label className="text-white" htmlFor="email">Message</Label> */}
-                        <textarea rows={7} className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " placeholder="Message"></textarea>
+                      <div className="xl:col-span-2">
+                        <textarea rows={7} className="text-white w-full border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " placeholder="Message"></textarea>
                       </div>
                     </div>
                   </form>
