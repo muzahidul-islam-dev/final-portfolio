@@ -141,7 +141,7 @@ export default function App() {
             <div className="grid lg:justify-end">
               <img
                 src={ProfileImage}
-                className="rounded h md:h-60 lg:h-96"
+                className="rounded h-72 md:h-60 lg:h-96"
                 alt=""
               />
             </div>
