@@ -26,19 +26,20 @@ import { CardSpotlight } from "./components/ui/card-spotlight";
 import { SparklesCore } from "./components/ui/sparkles";
 import { Card, CardContent, CardFooter } from "./components/ui/card";
 import { ShineBorder } from "./components/ui/shine-border";
+import { NumberTicker } from "./components/ui/NumberTicker";
 export default function App() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "About Me",
+      link: "#about",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Service",
+      link: "#service",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Skills",
+      link: "#skills",
     },
   ];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,7 +69,7 @@ export default function App() {
               <NavbarLogo />
               <NavItems items={navItems} />
               <div className="flex gap-4">
-                <NavbarButton variant="bgPrimary" className="rounded-2xl">Contact Me</NavbarButton>
+                <NavbarButton variant="bgPrimary" className="rounded-2xl" href="#contact">Contact Me</NavbarButton>
               </div>
             </NavBody>
 
@@ -100,6 +101,7 @@ export default function App() {
                   <NavbarButton
                     onClick={() => setIsMobileMenuOpen(false)}
                     variant="gradient"
+                    href="#contact"
                     className="w-full bg-primary rounded-xl"
                   >
                     Contact Me
@@ -148,16 +150,16 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1400px] gap-5 mx-auto px-5 md:px-10">
-            <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
-            <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
-            <div className="bg-[#0f0f0f]/80 border  hover:border-primary hover:shadow-lg shadow-lime-400/10 transition-all duration-300 rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide">5+ <span className="text-sm text-neutral-300">Years of Experience</span></div>
+            <div className="hover:shadow-lg shadow-md shadow-teal-500/50 duration-300 transition-all bg-[#0f0f0f]/80 border  hover:border-primary rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide"><span><NumberTicker className="text-primary" value={5} />+</span> <span className="text-sm text-neutral-300">Years of Experience</span></div>
+            <div className="hover:shadow-lg shadow-md shadow-teal-500/50 duration-300 transition-all bg-[#0f0f0f]/80 border  hover:border-primary rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide"><span><NumberTicker className="text-primary" value={50} />+</span> <span className="text-sm text-neutral-300">Projects Completed</span></div>
+            <div className="hover:shadow-lg shadow-md shadow-teal-500/50 duration-300 transition-all bg-[#0f0f0f]/80 border  hover:border-primary rounded-2xl px-8 py-6 w-full sm:w-[300px] text-primary text-center space-y-2 grid h-max text-5xl font-bold text-lime-400 tracking-wide"><span><NumberTicker value={98} className="text-primary" />%</span> <span className="text-sm text-neutral-300">Client Satisfaction</span></div>
           </div>
 
           {/* Radial gradient for the container to give a faded look */}
           {/* <div className="pointer-events-none absolute inset-0 flex justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-black"></div> */}
         </BackgroundBeamsWithCollision>
       </div>
-      <section className="my-20">
+      <section className="my-20" id="about">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
           <div className="grid md:grid-cols-2">
             <div className="">
@@ -204,7 +206,7 @@ export default function App() {
         <HeroParallax products={Projects} />;
       </section>
 
-      <section className="my-20">
+      <section className="my-20" id="service">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
           <h3 className="text-gray-400 text-sm md:text-xl text-center uppercase">Popular Services</h3>
           <h1 className="text-white text-2xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
@@ -253,7 +255,7 @@ export default function App() {
 
       </section>
 
-      <section className="border-t-4 border-primary rounded-2xl my-20">
+      <section className="border-t-4 border-primary rounded-2xl my-20" id="skills">
         <div className="max-w-[1400px] mx-auto px-10">
           <div className="h-[25rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md mt-10">
             <h1 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 uppercase">
@@ -422,7 +424,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="my-40">
+      <section className="my-40" id="contact">
         <div className="max-w-[1400px] mx-auto px-10 ">
           <div className="grid lg:grid-cols-2 gap-10 items-center justify-center">
             <div className="max-w-md">
