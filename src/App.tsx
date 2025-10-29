@@ -202,11 +202,11 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="rounded-2xl py-20 my-20 border-b-4 border-primary">
+      <section className="rounded-2xl py-20 my-20">
         <HeroParallax products={Projects} />;
       </section>
 
-      <section className="px-20 my-40">
+      <section className="px-20 my-20">
         <div className="max-w-[1400px] mx-auto">
           <h3 className="text-gray-400 text-sm md:text-xl text-center uppercase">Popular Services</h3>
           <h1 className="text-white text-3xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
@@ -471,6 +471,111 @@ export default function App() {
 
         </div>
       </section>
+
+      <footer className="text-slate-100 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Brand Section */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-white">Your Brand</h3>
+            <p className="text-sm text-slate-400">Building amazing experiences for everyone.</p>
+          </div>
+
+          {/* Product Links */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-white uppercase tracking-wide">Product</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Security
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-white uppercase tracking-wide">Company</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal Links */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-white uppercase tracking-wide">Legal</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-slate-400">© 2025 Your Company. All rights reserved.</p>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Twitter">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.603-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.544 2.914 1.186.092-.923.35-1.544.636-1.9-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.817c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.195 20 14.44 20 10.017 20 4.484 15.522 0 10 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.292-1.194-2.292-1.195 0-1.38.932-1.38 1.893v4.577H8.368V9.359h2.462v1.017h.034c.345-.517.994-1.064 2.047-1.064 2.186 0 2.589 1.438 2.589 3.31v4.716zM5.337 8.855c-.696 0-1.286-.563-1.286-1.259s.59-1.26 1.286-1.26c.696 0 1.286.563 1.286 1.26s-.59 1.259-1.286 1.259zm1.078-2.537H4.26V16.338h2.155V6.318zM17.771 1H2.229A2.225 2.225 0 000 3.257v13.486A2.225 2.225 0 002.229 19h15.542A2.226 2.226 0 0020 16.743V3.257A2.226 2.226 0 0017.771 1z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 }
