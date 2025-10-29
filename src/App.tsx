@@ -24,6 +24,10 @@ import { FlipWords } from "./components/ui/flip-words";
 import { CardSpotlight } from "./components/ui/card-spotlight";
 
 import { SparklesCore } from "./components/ui/sparkles";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./components/ui/card";
+import { ShineBorder } from "./components/ui/shine-border";
+import { Label } from "./components/ui/label";
+import { Input } from "./components/ui/input";
 export default function App() {
   const navItems = [
     {
@@ -254,7 +258,7 @@ export default function App() {
       </section>
 
       <section className="border-t-4 border-primary rounded-2xl my-20">
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[1400px] mx-auto px-10">
           <div className="h-[25rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md mt-10">
             <h1 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 uppercase">
               Skills and Experience
@@ -422,8 +426,52 @@ export default function App() {
         </div>
       </section>
 
-      <section>
+      <section className="my-40">
+        <div className="max-w-[1400px] mx-auto px-10 ">
+          <div className="grid grid-cols-2 gap-10 items-center justify-center">
+            <div className="max-w-md">
+              <h3 className="text-white">Get In Touch</h3>
+              <h1 className="text-white text-5xl font-bold my-5">Let’s Talk For your <br /><span className="text-primary">Next Projects</span></h1>
+              <p className="text-white">I’m always open to discussing product design work or partnership opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
 
+            </div>
+            <div>
+              <Card className="relative w-full overflow-hidden bg-gray-900 backdrop-blur-lg rounded-xl border shadow-2xl hover:shadow-3xl transition-all duration-300 pt-10 pb-5 px-5">
+                <ShineBorder shineColor={["#1DCD9F", "#FE8FB5", "#1DCD9F"]} />
+                <CardContent>
+                  <form>
+                    <div className="grid grid-cols-2 gap-10">
+                      <div className="grid gap-2">
+                        {/* <Label className="text-white" htmlFor="email">Name</Label> */}
+                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
+                      </div>
+                      <div className="grid gap-2">
+                        {/* <Label className="text-white" htmlFor="email">Email</Label> */}
+                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="email" placeholder="Enter Email" />
+                      </div>
+                      <div className="grid gap-2">
+                        {/* <Label className="text-white" htmlFor="email">Number</Label> */}
+                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500  focus:appearance-none" id="email" type="number" placeholder="Enter Number" />
+                      </div>
+                      <div className="grid gap-2">
+                        {/* <Label className="text-white" htmlFor="email">Subject</Label> */}
+                        <input className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " id="email" type="text" placeholder="Enter Name" />
+                      </div>
+                      <div className="grid gap-2 col-span-2">
+                        {/* <Label className="text-white" htmlFor="email">Message</Label> */}
+                        <textarea rows={7} className="text-white border border-transparent bg-gray-800 py-2 px-4 rounded-md focus:outline-none focus:border-teal-500 " placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </CardContent>
+                <CardFooter className="m-0">
+                  <button className="bg-primary rounded-lg py-3 px-6 font-semibold cursor-pointer border border-transparent hover:bg-transparent hover:border-teal-500 hover:text-teal-500 duration-300 transition-all">Submit</button>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+
+        </div>
       </section>
     </div>
   );
