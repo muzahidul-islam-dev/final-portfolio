@@ -160,10 +160,10 @@ export default function App() {
         </BackgroundBeamsWithCollision>
       </div>
       <section className="my-20">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-2">
+        <div className="max-w-[1400px] mx-auto px-10">
+          <div className="grid md:grid-cols-2">
             <div className="">
-              <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden">
+              <div className="relative flex h-[300px] md:h-[600px] w-full flex-col items-center justify-center overflow-hidden">
                 <OrbitingCircles iconSize={40} radius={250}>
                   <Icons.typescript />
                   <Icons.phpIcon />
@@ -478,7 +478,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Your Brand</h3>
+            <h3 className="text-lg font-semibold text-white">RH.</h3>
             <p className="text-sm text-slate-400">Building amazing experiences for everyone.</p>
           </div>
 
@@ -551,7 +551,7 @@ export default function App() {
 
         {/* Bottom Section */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-slate-400">© 2025 Your Company. All rights reserved.</p>
+          <p className="text-sm text-slate-400">Copyright © 2025, Rahat Hossain All Rights Reserved</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Twitter">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
