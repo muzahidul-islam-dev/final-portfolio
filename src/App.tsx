@@ -210,42 +210,42 @@ export default function App() {
           <h3 className="text-gray-400 text-sm md:text-xl text-center uppercase">Popular Services</h3>
           <h1 className="text-white text-2xl md:text-5xl font-bold my-3 text-center">My <span className="text-primary">Special Service For your</span> <br />
             Business Development</h1>
-          <div className="lg:max-w-5xl mx-auto my-20">
+          <div className="lg:max-w-7xl mx-auto my-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">01</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">01</span> <span className="text-white text-xl font-semibold">Laravel Web Application Development</span>
+                  <p className="text-white text-sm my-2">Custom and scalable Laravel web application development.</p>
                 </div>
               </CardSpotlight>
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">02</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">02</span> <span className="text-white text-xl font-semibold">Full Stack Website Development (Laravel / MERN)</span>
+                  <p className="text-white text-sm my-2">Build modern and responsive full stack web solutions.</p>
                 </div>
               </CardSpotlight>
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">03</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">03</span> <span className="text-white text-xl font-semibold">Bug Fixing & Performance Optimization</span>
+                  <p className="text-white text-sm my-2">Fix backend or frontend bugs and improve speed.</p>
                 </div>
               </CardSpotlight>
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">04</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">04</span> <span className="text-white text-xl font-semibold">RESTful API Development (Laravel / Node.js)</span>
+                  <p className="text-white text-sm my-2">Develop secure and efficient RESTful APIs for web apps.</p>
                 </div>
               </CardSpotlight>
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">05</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">05</span> <span className="text-white text-xl font-semibold">E-commerce Website Development</span>
+                  <p className="text-white text-sm my-2">Create advanced e-commerce or multi-vendor web platforms.</p>
                 </div>
               </CardSpotlight>
               <CardSpotlight color="#1DCD9F" className="h-fit w-full py-5 px-7">
                 <div>
-                  <span className="text-primary font-bold text-2xl">06</span> <span className="text-white text-2xl font-semibold">Technical SEO & Console Fixes</span>
-                  <p className="text-white text-sm my-2">Beyond keywords I fix what search engines care about.</p>
+                  <span className="text-primary font-bold text-xl">06</span> <span className="text-white text-xl font-semibold">API Integration & Backend Development</span>
+                  <p className="text-white text-sm my-2">Integrate third-party APIs and build powerful backend systems.</p>
                 </div>
               </CardSpotlight>
             </div>
