@@ -1,64 +1,27 @@
+import WalkinroomImage from './../assets/img/mockup/booking.png'
+import SchoolManagement from './../assets/img/mockup/school.png'
+import Romi from './../assets/img/mockup/romi.png'
+import CarWashDetailing from './../assets/img/mockup/carwash.png'
 export const Projects = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Romi",
+    link: "#",
+    thumbnail: Romi,
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "School Management System",
+    link: "#",
+    thumbnail: SchoolManagement,
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
- 
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Walkinroom",
+    link: "https://walkinroom.com",
+    thumbnail: WalkinroomImage,
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Car Wash Detailing",
+    link: "https://popularcarwashdetailing.com/",
+    thumbnail: CarWashDetailing,
   },
 ];
 
