@@ -254,7 +254,7 @@ export default function App() {
 
       </section>
 
-      <section className="border-t-4 border-primary rounded-2xl my-20" id="skills">
+      <section className="border-t-4 border-primary rounded-4xl my-20" id="skills">
         <div className="max-w-[1400px] mx-auto px-10">
           <div className="h-[25rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md mt-10">
             <h1 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 uppercase">
