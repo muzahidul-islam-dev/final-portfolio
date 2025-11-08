@@ -43,9 +43,8 @@ export default function App() {
     },
   ];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const heroDescription = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
-  const aboutContent = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam officiis temporibus accusamus! In obcaecati, assumenda alias quia facilis eligendi iure tempore cumque numquam quos, temporibus fuga odit ab at.`;
+  const heroDescription = `I build modern, scalable, and secure web applications focused on clean design and strong performance. My coding style emphasizes clarity, efficiency, and long-term maintainability. I love turning complex ideas into simple, functional, and user-friendly solutions. Always eager to learn and improve, I strive to deliver quality results that exceed client expectations.`;
+  const aboutContent = `Hi, I’m Rahat Hossain, a passionate Full Stack Web Developer specializing in Laravel, React.js, Tailwind CSS, and the MERN stack. I enjoy creating digital solutions that combine clean, scalable, and maintainable code with beautiful and responsive user interfaces. My approach is to blend creativity with technical precision, delivering efficient, modern, and user-friendly web applications. I am committed to continuous learning and always eager to explore new technologies to stay ahead in the fast-evolving world of web development. Turning ideas into reality, one line of code at a time, is what drives me to deliver quality results that exceed expectations.`;
   const professionWords = [
     'Web Designer',
     'Web Developer',
@@ -463,7 +462,6 @@ export default function App() {
               </Card>
             </div>
           </div>
-
         </div>
       </section>
 
