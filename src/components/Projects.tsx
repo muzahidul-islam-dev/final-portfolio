@@ -3,11 +3,13 @@ import SchoolManagement from './../assets/img/mockup/school.png'
 import Romi from './../assets/img/mockup/romi.png'
 import CarWashDetailing from './../assets/img/mockup/carwash.png'
 import Afaqljadwaa from './../assets/img/mockup/afaqaljadwa.png'
+import GmdFoundation from './../assets/img/mockup/gmdfoundation.png'
+import Beatrettreatdr from './../assets/img/mockup/beatretreat.png'
 export const Projects = [
   {
-    title: "Romi",
-    link: "#",
-    thumbnail: Romi,
+    title: "GMD Foundation",
+    link: "https://gmdfoundation.org/",
+    thumbnail: GmdFoundation,
   },
   {
     title: "School Management System",
@@ -28,6 +30,31 @@ export const Projects = [
     title: "Afaqal Jadwaa",
     link: "https://afaqaljadwaa.com/",
     thumbnail: Afaqljadwaa,
+  },
+  {
+    title: "Romi",
+    link: "#",
+    thumbnail: Romi,
+  },
+  {
+    title: "Romi",
+    link: "#",
+    thumbnail: Romi,
+  },
+  {
+    title: "Beat Retreat",
+    link: "https://beatretreatdr.com/",
+    thumbnail: Beatrettreatdr,
+  },
+  {
+    title: "Afaqal Jadwaa",
+    link: "https://afaqaljadwaa.com/",
+    thumbnail: Afaqljadwaa,
+  }, 
+  {
+    title: "GMD Foundation",
+    link: "https://gmdfoundation.org/",
+    thumbnail: GmdFoundation,
   },
 ];
 
