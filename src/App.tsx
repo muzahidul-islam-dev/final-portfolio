@@ -183,6 +183,8 @@ export default function App() {
                   <Icons.gitIcon />
                   <Icons.postmanIcon />
                   <Icons.wordpressIcon />
+                  <Icons.dartIcon />
+                  <Icons.flutterIcon />
                 </OrbitingCircles>
               </div>
             </div>
@@ -378,7 +380,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Dart</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3>
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -396,7 +398,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Flutter</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3>
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
