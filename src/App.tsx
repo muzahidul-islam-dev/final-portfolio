@@ -183,8 +183,6 @@ export default function App() {
                   <Icons.gitIcon />
                   <Icons.postmanIcon />
                   <Icons.wordpressIcon />
-                  <Icons.dartIcon />
-                  <Icons.flutterIcon />
                 </OrbitingCircles>
               </div>
             </div>
