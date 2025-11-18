@@ -116,7 +116,7 @@ export default function App() {
                 Hello,
               </h3>
               <h2 className="text-2xl md:text-5xl text-center lg:text-left lg:text-5xl font-bold text-white relative z-2 font-sans">
-                I'm <ColourfulText text="RAHAT HOSSAIN" /> a
+                I'm Rahat Hossain a
               </h2>
               <h3 className="text-2xl text-center lg:text-left md:text-5xl lg:text-5xl font-bold text-primary  relative z-2 font-sans my-7">
                 <FlipWords words={professionWords} />
