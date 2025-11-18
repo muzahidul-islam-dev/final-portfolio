@@ -11,7 +11,6 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "./components/ui/resizable-navbar";
-import { ColourfulText } from "./components/ui/colourful-text";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 import ProfileImage from "./assets/img/profile.jpg";

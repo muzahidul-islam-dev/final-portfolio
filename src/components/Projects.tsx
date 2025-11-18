@@ -5,7 +5,7 @@ import CarWashDetailing from './../assets/img/mockup/carwash.png'
 import Afaqljadwaa from './../assets/img/mockup/afaqaljadwa.png'
 import GmdFoundation from './../assets/img/mockup/gmdfoundation.png'
 import Beatrettreatdr from './../assets/img/mockup/beatretreat.png'
-export const Projects = [
+const Projects = [
   {
     title: "GMD Foundation",
     link: "https://gmdfoundation.org/",
