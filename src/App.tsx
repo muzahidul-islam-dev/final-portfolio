@@ -289,7 +289,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">PHP</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -298,7 +298,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Laravel</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -307,7 +307,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">MySql</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -316,7 +316,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">MongoDB</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -325,7 +325,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">React</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -334,7 +334,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Express Js</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -343,7 +343,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Typescript</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -352,7 +352,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Next JS</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -361,7 +361,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Tailwind CSS</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -370,7 +370,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">JavaScript</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -379,7 +379,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Dart</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -388,7 +388,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">WordPress</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -397,7 +397,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Flutter</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">20%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -406,7 +406,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">Postman</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
             <div className="rounded-xl  hover:shadow-lg shadow-teal-500/50 duration-300 transition-all bg-gray-900 py-5">
@@ -415,7 +415,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-white text-center text-xl font-semibold">GitHub</h3>
-                <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3>
+                {/* <h3 className="text-white font-semibold text-center my-2 text-primary">90%</h3> */}
               </div>
             </div>
           </div>
