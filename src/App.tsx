@@ -27,6 +27,14 @@ import { Card, CardContent, CardFooter } from "./components/ui/card";
 import { ShineBorder } from "./components/ui/shine-border";
 import { NumberTicker } from "./components/ui/NumberTicker";
 export default function App() {
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "/muzahidul_islam_full_stack_developer.pdf";
+    link.download = "muzahidul_islam_full_stack_developer.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const navItems = [
     {
       name: "About Me",
@@ -133,8 +141,9 @@ export default function App() {
                 <Button
                   borderRadius="1.75rem"
                   className="bg-slate-900 text-white cursor-pointer hover:bg-[#1DCD9F] hover:text-black border-slate-800"
+                  onClick={downloadFile}
                 >
-                  Contact Us
+                  Download CV
                 </Button>
               </div>
             </div>
