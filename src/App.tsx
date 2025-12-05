@@ -125,11 +125,11 @@ export default function App() {
                 words={heroDescription}
               />
               <div className="flex gap-5 justify-center lg:justify-start">
-                <button
+                {/* <button
                   className="bg-primary px-10 rounded-[1.75rem]"
                 >
                   Contact Us
-                </button>
+                </button> */}
                 <Button
                   borderRadius="1.75rem"
                   className="bg-slate-900 text-white cursor-pointer hover:bg-[#1DCD9F] hover:text-black border-slate-800"
