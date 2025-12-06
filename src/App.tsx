@@ -133,11 +133,12 @@ export default function App() {
                 words={heroDescription}
               />
               <div className="flex gap-5 justify-center lg:justify-start">
-                {/* <button
+                <a
                   className="bg-primary px-10 rounded-[1.75rem]"
+                  href="mailto:muzahidulislam.dev@gmail.com"
                 >
                   Contact Us
-                </button> */}
+                </a>
                 <Button
                   borderRadius="1.75rem"
                   className="bg-slate-900 text-white cursor-pointer hover:bg-[#1DCD9F] hover:text-black border-slate-800"
