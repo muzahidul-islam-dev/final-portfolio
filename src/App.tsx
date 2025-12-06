@@ -134,7 +134,7 @@ export default function App() {
               />
               <div className="flex gap-5 justify-center lg:justify-start">
                 <a
-                  className="bg-primary px-10 rounded-[1.75rem]"
+                  className="bg-primary px-10 rounded-[1.75rem] grid items-center"
                   href="mailto:muzahidulislam.dev@gmail.com"
                 >
                   Contact Us
